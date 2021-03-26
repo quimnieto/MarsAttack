@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e2933eb5-b21a-4a89-aa14-2be3d9bd88f2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/robot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code/functions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code/robot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/battle-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/sw-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/user.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bkps/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bkps/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata0/kata0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata0/kata0.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata1/kata1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata1/kata1.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata10/kata10.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata10/kata10.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata11/kata11.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata11/kata11.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata12/kata12.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata12/kata12.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata13/kata13.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata13/kata13.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata2/kata2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata2/kata2.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata3/kata3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata3/kata3.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata4/kata4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata4/kata4.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata5/kata5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata5/kata5.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata6/kata6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata7/kata7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata8/kata8_1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata8/kata8_1.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata8/kata8_2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata8/kata8_2.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata8/kata8_3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata8/kata8_3.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata9/kata9_1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata9/kata9_1.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata9/kata9_2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata9/kata9_2.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata9/kata9_3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata9/kata9_3.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata9/kata9_4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec1/kata9/kata9_4.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec2/Movie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec2/pec2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec2/pec2.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec3/pec2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/pec2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec3/pec3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/pec3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="ProjectId" id="1hbTMzylwGH181vHGRprZTPA3cF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.linters.configure.manually.selectedeslint" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/code" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="run.prettier.on.save" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pec1/kata9" />
+      <recent name="$PROJECT_DIR$/src/pec1/kata8" />
+      <recent name="$PROJECT_DIR$/src/pec1/kata7" />
+      <recent name="$PROJECT_DIR$/src/pec1/kata6" />
+      <recent name="$PROJECT_DIR$/src/pec1/kata5" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/code" />
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/src/pec2" />
+      <recent name="$PROJECT_DIR$/src/pec1/kata13" />
+      <recent name="$PROJECT_DIR$/src/pec1/kata12" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Jest.PEC2: SWAPI">
+    <configuration name="PEC2: SWAPI" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/pec2/pec2.spec.js" />
+      <test-names>
+        <test-name value="PEC2: SWAPI" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="PEC2: SWAPI.get movie without id should return error" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/pec2/pec2.spec.js" />
+      <test-names>
+        <test-name value="PEC2: SWAPI" />
+        <test-name value="get movie without id should return error" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="PEC2: SWAPI.get movie without id shoulr return error" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/pec2/pec2.spec.js" />
+      <test-names>
+        <test-name value="PEC2: SWAPI" />
+        <test-name value="get movie without id shoulr return error" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="PEC2: SWAPI.getMovieCharactersAndHomeworlds should return characters names and homeworld " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/pec2/pec2.spec.js" />
+      <test-names>
+        <test-name value="PEC2: SWAPI" />
+        <test-name value="getMovieCharactersAndHomeworlds should return characters names and homeworld " />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="kata #10.kata #11.setFruit amb el valor 12 el mètode llançá un error i manté el seu valor previ." type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/pec1/kata13/kata13.spec.js" />
+      <test-names>
+        <test-name value="kata #10" />
+        <test-name value="kata #11" />
+        <test-name value="setFruit amb el valor 12 el mètode llançá un error i manté el seu valor previ." />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.PEC2: SWAPI" />
+        <item itemvalue="Jest.PEC2: SWAPI.get movie without id should return error" />
+        <item itemvalue="Jest.PEC2: SWAPI.get movie without id shoulr return error" />
+        <item itemvalue="Jest.kata #10.kata #11.setFruit amb el valor 12 el mètode llançá un error i manté el seu valor previ." />
+        <item itemvalue="Jest.PEC2: SWAPI.getMovieCharactersAndHomeworlds should return characters names and homeworld " />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e2933eb5-b21a-4a89-aa14-2be3d9bd88f2" name="Default Changelist" comment="" />
+      <created>1600278748411</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600278748411</updated>
+      <workItem from="1600278751181" duration="1006000" />
+      <workItem from="1600500592343" duration="1815000" />
+      <workItem from="1600937528743" duration="150000" />
+      <workItem from="1601655379996" duration="17824000" />
+      <workItem from="1602917552976" duration="8309000" />
+      <workItem from="1603521925089" duration="31000" />
+      <workItem from="1603522025476" duration="10043000" />
+      <workItem from="1603618909591" duration="821000" />
+      <workItem from="1604123829669" duration="16015000" />
+      <workItem from="1606724840439" duration="13982000" />
+      <workItem from="1607159670251" duration="6759000" />
+      <workItem from="1609061170847" duration="8352000" />
+      <workItem from="1609583173989" duration="6085000" />
+      <workItem from="1616781977905" duration="10128000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2059" y="289" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616782871315">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2059" y="289" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1616782871315" />
+    <state x="1466" y="100" width="1720" height="880" key="DiffContextDialog" timestamp="1616784033487">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1466" y="100" width="1720" height="880" key="DiffContextDialog/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1616784033487" />
+    <state x="1528" y="279" width="1107" height="719" key="find.popup" timestamp="1616782941774">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1528" y="279" width="1107" height="719" key="find.popup/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1616782941774" />
+    <state x="2158" y="312" width="325" height="462" key="refactoring.ChangeSignatureDialog" timestamp="1609065347037">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2158" y="312" width="325" height="462" key="refactoring.ChangeSignatureDialog/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1609065347037" />
+    <state x="1990" y="245" key="run.anything.popup" timestamp="1616788579115">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1990" y="245" key="run.anything.popup/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1616788579115" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pec1/kata11/kata11.spec.js</url>
+          <line>4</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pec2/pec2.spec.js</url>
+          <line>110</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/code/functions.js</url>
+          <line>8</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

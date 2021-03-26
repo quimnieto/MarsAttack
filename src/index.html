@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>NASA Control panel</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <section class="page">
+      <header class="header">
+        <div class="header-logo">
+          <img src="assets/nasa-logo.jpg" />
+          <span class="header-text">Welcome to the NASA control panel</span>
+        </div>
+      </header>
+      <aside class="sidebar">
+        <h3 class="sidebar-title">Command line</h3>
+        <div class="form">
+          <div class="form-input">
+            <input type="text" id="command" name="command">
+          </div>
+          <div class="button">
+            <button id="send-command">Send Command</button>
+          </div>
+        </div>
+      </aside>
+      <main id="main">
+        <div id="planet">
+          <div id="martian-floor">
+
+          </div>
+<!--          <canvas id="martian-floor">-->
+
+<!--          </canvas>-->
+        </div>
+      </main>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
