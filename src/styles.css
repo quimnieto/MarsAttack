@@ -81,28 +81,48 @@ body {
   background-position: center center;
 }
 
-#martian-floor {
+#martian-ground {
   margin: 50px 0 0 50px;
 
 }
 
 table {
   margin: auto;
-  border: outset maroon 3px;
+  border: none;
+  /*border: outset maroon 3px;*/
   background: black;
   /*cursor: crosshair;*/
 }
 
 td {
   line-height: 0;
+  border: none;
   width: 40px; height: 40px;
-  background: indianred;
   text-align: center;
   vertical-align: middle;
 }
 
+.mars-ground {
+  /*background-image: url("assets/mars_ground2.jpg");*/
+  background-image: url("assets/mars_ground3.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
 .rover {
-  background: green;
+  background-image: url("assets/robot.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+
+.obstacle {
+  background-image: url("assets/alien.png");
+  background-size: 30px;
+}
+
+.elon {
+  background-image: url("assets/elon.jpg");
+  background-size: 40px;
 }
 
 
