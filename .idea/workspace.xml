@@ -6,13 +6,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2933eb5-b21a-4a89-aa14-2be3d9bd88f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/code/functions.spec.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/code/messages.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bkps/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bkps/styles.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/code/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/functions.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/functions.spec.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/code/pec2.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/code/pec3.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/code/robot.png" beforeDir="false" />
@@ -124,47 +124,7 @@
       <recent name="$PROJECT_DIR$/src/pec1/kata12" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.TEST RANDOMS AND COMMAND VALIDATION">
-    <configuration name="TEST MARS BUILDING WITH ROVERS START POSITION AND OBSTACLES" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/code/functions.spec.js" />
-      <test-names>
-        <test-name value="TEST MARS BUILDING WITH ROVERS START POSITION AND OBSTACLES" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="TEST MARS BUILDING WITH ROVERS START POSITION AND OBSTACLES.Sending correct command" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/code/functions.spec.js" />
-      <test-names>
-        <test-name value="TEST MARS BUILDING WITH ROVERS START POSITION AND OBSTACLES" />
-        <test-name value="Sending correct command" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="TEST RANDOMS AND COMMAND VALIDATION" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/code/functions.spec.js" />
-      <test-names>
-        <test-name value="TEST RANDOMS AND COMMAND VALIDATION" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Jest.TEST ROVERS MOVEMENTS.Message when rover finds Elon">
     <configuration name="TEST ROVERS MOVEMENTS" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -175,6 +135,48 @@
       <test-file value="$PROJECT_DIR$/src/code/functions.spec.js" />
       <test-names>
         <test-name value="TEST ROVERS MOVEMENTS" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="TEST ROVERS MOVEMENTS.Error message when rover finds an obstacle" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/code/functions.spec.js" />
+      <test-names>
+        <test-name value="TEST ROVERS MOVEMENTS" />
+        <test-name value="Error message when rover finds an obstacle" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="TEST ROVERS MOVEMENTS.Error message when rover finds limit area" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/code/functions.spec.js" />
+      <test-names>
+        <test-name value="TEST ROVERS MOVEMENTS" />
+        <test-name value="Error message when rover finds limit area" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="TEST ROVERS MOVEMENTS.Message when rover finds Elon" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/code/functions.spec.js" />
+      <test-names>
+        <test-name value="TEST ROVERS MOVEMENTS" />
+        <test-name value="Message when rover finds Elon" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -194,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.TEST RANDOMS AND COMMAND VALIDATION" />
+        <item itemvalue="Jest.TEST ROVERS MOVEMENTS.Message when rover finds Elon" />
+        <item itemvalue="Jest.TEST ROVERS MOVEMENTS.Error message when rover finds limit area" />
+        <item itemvalue="Jest.TEST ROVERS MOVEMENTS.Error message when rover finds an obstacle" />
         <item itemvalue="Jest.TEST ROVERS MOVEMENTS" />
         <item itemvalue="Jest.TEST ROVERS MOVEMENTS.Send command and check limit" />
-        <item itemvalue="Jest.TEST MARS BUILDING WITH ROVERS START POSITION AND OBSTACLES" />
-        <item itemvalue="Jest.TEST MARS BUILDING WITH ROVERS START POSITION AND OBSTACLES.Sending correct command" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +225,7 @@
       <workItem from="1607159670251" duration="6759000" />
       <workItem from="1609061170847" duration="8352000" />
       <workItem from="1609583173989" duration="6085000" />
-      <workItem from="1616781977905" duration="32373000" />
+      <workItem from="1616781977905" duration="34438000" />
     </task>
     <servers />
   </component>
@@ -259,22 +261,22 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="2109" y="298" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1616920175085" />
-    <state width="1874" height="339" key="GridCell.Tab.0.bottom" timestamp="1616918557842">
+    <state width="1874" height="339" key="GridCell.Tab.0.bottom" timestamp="1616924809604">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="339" key="GridCell.Tab.0.bottom/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1616918557842" />
-    <state width="1874" height="339" key="GridCell.Tab.0.center" timestamp="1616918557841">
+    <state width="1874" height="339" key="GridCell.Tab.0.bottom/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1616924809604" />
+    <state width="1874" height="339" key="GridCell.Tab.0.center" timestamp="1616924809603">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="339" key="GridCell.Tab.0.center/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1616918557841" />
-    <state width="1874" height="339" key="GridCell.Tab.0.left" timestamp="1616918557841">
+    <state width="1874" height="339" key="GridCell.Tab.0.center/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1616924809603" />
+    <state width="1874" height="339" key="GridCell.Tab.0.left" timestamp="1616924809603">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="339" key="GridCell.Tab.0.left/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1616918557841" />
-    <state width="1874" height="339" key="GridCell.Tab.0.right" timestamp="1616918557842">
+    <state width="1874" height="339" key="GridCell.Tab.0.left/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1616924809603" />
+    <state width="1874" height="339" key="GridCell.Tab.0.right" timestamp="1616924809603">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="339" key="GridCell.Tab.0.right/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1616918557842" />
+    <state width="1874" height="339" key="GridCell.Tab.0.right/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1616924809603" />
     <state width="1874" height="350" key="GridCell.Tab.1.bottom" timestamp="1616839508835">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
@@ -323,10 +325,10 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="350" key="GridCell.Tab.3.right/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1616839508836" />
-    <state x="1528" y="279" width="1107" height="719" key="find.popup" timestamp="1616918736386">
+    <state x="1528" y="279" width="1107" height="719" key="find.popup" timestamp="1616924846751">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state x="1528" y="279" width="1107" height="719" key="find.popup/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1616918736386" />
+    <state x="1528" y="279" width="1107" height="719" key="find.popup/0.27.1366.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1616924846751" />
     <state x="2158" y="312" width="325" height="462" key="refactoring.ChangeSignatureDialog" timestamp="1609065347037">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>

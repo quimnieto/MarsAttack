@@ -160,14 +160,18 @@ function printRoversMessage (message, error = true) {
     console.value = message;
 }
 
+function cleanRoversConsole () {
+    document.querySelector('#console').value = '';
+}
+
 export default {
-    getMarsGround: generateMarsGround,
-    getStartPosition: getRoverStartPosition,
+    generateMarsGround,
+    getRoverStartPosition,
     getObstacles,
     sendCommand,
     getRandomRowPosition,
     getRandomColPosition,
     isValidCommand,
     cleanCommand,
-    getElon: getElonPosition
+    getElonPosition
 }

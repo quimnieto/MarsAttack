@@ -1,5 +1,6 @@
-import {describe, jest, test} from "@jest/globals";
+import {describe,jest, test} from "@jest/globals";
 import functions from "./functions";
+import messages from "./messages";
 
 describe('TEST RANDOMS AND COMMAND VALIDATION', () => {
     test('get random row position in range [0 - 150]', async () => {
@@ -29,7 +30,7 @@ describe('TEST RANDOMS AND COMMAND VALIDATION', () => {
 
 describe('TEST MARS BUILDING WITH ROVERS START POSITION AND OBSTACLES', () => {
     getTestElements();
-    functions.getMarsGround(100 , 100);
+    functions.generateMarsGround(100 , 100);
 
     let randomRow = functions.getRandomRowPosition(100);
     let randomCol = functions.getRandomColPosition(100);
@@ -42,7 +43,7 @@ describe('TEST MARS BUILDING WITH ROVERS START POSITION AND OBSTACLES', () => {
     });
 
     test('Check rover start position in mars', async () => {
-        functions.getStartPosition(100, 100);
+        functions.getRoverStartPosition(100, 100);
         let roverId = document.querySelector('.rover').id;
         let x = parseInt(roverId.split('-')[0]);
         let y = parseInt(roverId.split('-')[1]);
@@ -61,24 +62,48 @@ describe('TEST MARS BUILDING WITH ROVERS START POSITION AND OBSTACLES', () => {
 });
 
 describe('TEST ROVERS MOVEMENTS', () => {
+    test('Error message when rover finds an obstacle', async () => {
+        clearMars();
+        let roverCel = document.getElementById('5-5');
+        roverCel.setAttribute('class', 'rover');
 
-    document.body.innerHTML = '';
-    getTestElements();
-    functions.getMarsGround(100 , 100);
-    functions.sendCommand();
+        let obstacleCel = document.getElementById('5-6');
+        obstacleCel.setAttribute('class', 'obstacle');
 
-    test('Send command and check limit', async () => {
-        let cell = document.getElementById('5-5');
-        cell.setAttribute('class', 'rover');
-        document.querySelector('#command').setAttribute('value', 'FFFFFFFFF');
+        document.querySelector('#command').setAttribute('value', 'R');
         document.querySelector('#send-command').click();
 
-        let roverNewPosition = document.querySelector('.rover').id;
-        let newX = roverNewPosition.split('-')[0];
-        let newY = roverNewPosition.split('-')[1];
+        let consoleText = document.getElementById('console').value;
+        expect(consoleText).toBe('Error: ' + messages.OBSTACLE_MESSAGE);
+    });
 
-        expect(parseInt(newX)).toBe(0);
-        expect(parseInt(newY)).toBe(5);
+    test('Error message when rover finds limit area', async () => {
+        clearMars();
+
+        let roverCel = document.getElementById('0-0');
+        roverCel.setAttribute('class', 'rover');
+
+        document.querySelector('#command').setAttribute('value', 'F');
+        document.querySelector('#send-command').click();
+
+        let consoleText = document.getElementById('console').value;
+        expect(consoleText).toBe('Error: ' + messages.OBSTACLE_MESSAGE);
+    })
+
+    test('Message when rover finds Elon', async () => {
+        clearMars();
+
+        let roverCel = document.getElementById('5-5');
+        roverCel.setAttribute('class', 'rover');
+
+        let elonCel = document.getElementById('5-6');
+        elonCel.setAttribute('class', 'elon');
+
+        document.querySelector('#command').setAttribute('value', 'R');
+        document.querySelector('#send-command').click();
+
+        let consoleText = document.getElementById('console').value;
+        expect(consoleText).toBe(messages.ELON_MESSAGE);
     })
 });
 
@@ -86,5 +111,13 @@ function getTestElements () {
     document.body.innerHTML =
         '<div id="martian-ground"></div>' +
         '<button id="send-command">Send Command</button>' +
-        '<input type="text" id="command" name="command">';
+        '<input type="text" id="command" name="command">' +
+        '<textarea id="console" class="form-input" rows="10" cols="28" disabled="" style="color: red;"></textarea>';
+}
+
+function clearMars () {
+    document.body.innerHTML = '';
+    getTestElements();
+    functions.generateMarsGround(100 , 100);
+    functions.sendCommand();
 }
