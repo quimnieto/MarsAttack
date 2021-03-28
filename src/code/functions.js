@@ -1,6 +1,14 @@
+import messages from './messages';
 
+const COMMAND_FORWARD = 'F';
+const COMMAND_BACKWARD = 'B';
+const COMMAND_RIGHT = 'R';
+const COMMAND_LEFT = 'L';
+const CLASS_ROVER = 'rover';
+const CLASS_OBSTACLE = 'obstacle';
+const CLASS_ELON = 'elon';
 
-function getMarsGround (totalRows, totalCols) {
+function generateMarsGround (totalRows, totalCols) {
     let martianGround = document.getElementById("martian-ground");
     let battlefield   = document.createElement("table");
     let battlefieldBody = document.createElement("tbody");
@@ -25,11 +33,37 @@ function getMarsGround (totalRows, totalCols) {
     battlefield.setAttribute("border", "2");
 }
 
-function getStartPosition (rowNumber, colNumber) {
+function getRoverStartPosition (totalRows, totalCols) {
+    let x = getRandomRowPosition(totalRows);
+    let y = getRandomColPosition(totalCols);
+
+    document.getElementById(x + '-' + y).classList.add(CLASS_ROVER);
+}
+
+function getObstacles (rowNumber, colNumber) {
+    for (let obsNumber = 0; obsNumber < rowNumber; obsNumber ++) {
+        let x = getRandomRowPosition(rowNumber);
+        let y = getRandomColPosition(colNumber);
+        let cel = document.getElementById(x + '-' + y);
+
+        if (checkIfIsVoidCel(cel)) {
+            cel.classList.add(CLASS_OBSTACLE);
+        } else {
+            obsNumber -= 1;
+        }
+    }
+}
+
+function getElonPosition (rowNumber, colNumber) {
     let x = getRandomRowPosition(rowNumber);
     let y = getRandomColPosition(colNumber);
+    let cel = document.getElementById(x + '-' + y);
 
-    document.getElementById(x + '-' + y).classList.add('rover');
+    if (checkIfIsVoidCel(cel)) {
+        cel.classList.add(CLASS_ELON);
+    } else {
+       getElonPosition(rowNumber, colNumber)
+    }
 }
 
 function getRandomRowPosition (rowNumber) {
@@ -40,36 +74,10 @@ function getRandomColPosition (colNumber) {
     return Math.floor(Math.random() * colNumber);
 }
 
-function getObstacles (rowNumber, colNumber) {
-    for (let obsNumber = 0; obsNumber < rowNumber; obsNumber ++) {
-        let x = getRandomRowPosition(rowNumber);
-        let y = getRandomColPosition(colNumber);
-        let cel = document.getElementById(x + '-' + y);
-
-        if (checkIfHasClass(cel)) {
-            cel.classList.add('obstacle');
-        } else {
-            obsNumber -= 1;
-        }
-    }
-}
-
-function getElon (rowNumber, colNumber) {
-    let x = getRandomRowPosition(rowNumber);
-    let y = getRandomColPosition(colNumber);
-    let cel = document.getElementById(x + '-' + y);
-
-    if (checkIfHasClass(cel)) {
-        cel.classList.add('elon');
-    } else {
-       getElon(rowNumber, colNumber)
-    }
-}
-
-function checkIfHasClass (cel) {
-    return cel.classList.contains('rover') === false &&
-        cel.classList.contains('obstacle') === false &&
-        cel.classList.contains('elon') === false;
+function checkIfIsVoidCel (cel) {
+    return cel.classList.contains(CLASS_ROVER) === false &&
+        cel.classList.contains(CLASS_OBSTACLE) === false &&
+        cel.classList.contains(CLASS_ELON) === false;
 }
 
 function sendCommand () {
@@ -78,8 +86,14 @@ function sendCommand () {
     button.addEventListener('click',() => {
         let fullCommand = cleanCommand(document.querySelector('#command').value);
 
-        if (isValidCommand(fullCommand)) {
-            getSplitedCommand(fullCommand).forEach(command => makeMove(command));
+        try {
+            if (isValidCommand(fullCommand)) {
+                getSplitedCommand(fullCommand).forEach(command => makeMove(command));
+            } else {
+                throw new Error('Wrong command!');
+            }
+        } catch (e) {
+            printRoversMessage(e.toString());
         }
     });
 }
@@ -100,44 +114,60 @@ function makeMove (command) {
     let rover = document.querySelector('.rover');
     let roverInitialPosition = rover.id;
 
-    let currentX = roverInitialPosition.split('-')[0];
-    let currentY = roverInitialPosition.split('-')[1];
-    let x = currentX;
-    let y = currentY;
+    let currentXPosition = roverInitialPosition.split('-')[0];
+    let currentYPosition = roverInitialPosition.split('-')[1];
+    let newXPosition = currentXPosition;
+    let newYPosition = currentYPosition;
 
     switch (command) {
-        case 'F':
-            x = parseInt(currentX) - 1;
+        case COMMAND_FORWARD:
+            newXPosition = parseInt(currentXPosition) - 1;
             break;
-        case 'R':
-            y = parseInt(currentY) + 1;
+        case COMMAND_BACKWARD:
+            newXPosition = parseInt(currentXPosition) + 1;
             break;
-        case 'L':
-            y = parseInt(currentY) - 1;
+        case COMMAND_RIGHT:
+            newYPosition = parseInt(currentYPosition) + 1;
+            break;
+        case COMMAND_LEFT:
+            newYPosition = parseInt(currentYPosition) - 1;
             break;
     }
 
-    let newPosition = document.getElementById(x + '-' + y);
+    let newPosition = document.getElementById(newXPosition + '-' + newYPosition);
 
-    if (newPosition && newPosition.classList.contains('obstacle') === false) {
-        rover.classList.remove('rover');
-        newPosition.classList.add('rover');
-    } else if (newPosition.classList.contains('elon')) {
-            console.log('Elon Wins!!')
-    } else {
-        console.log('obstacle!');
+    if (newPosition === null) {
+        throw new Error(messages.OBSTACLE_MESSAGE);
     }
+
+    if (newPosition.classList.contains(CLASS_OBSTACLE)) {
+        throw new Error(messages.OBSTACLE_MESSAGE);
+    }
+
+    if (newPosition.classList.contains(CLASS_ELON)) {
+        printRoversMessage(messages.ELON_MESSAGE, false);
+        newPosition.classList.remove('elon');
+    }
+
+    rover.classList.remove(CLASS_ROVER);
+    newPosition.classList.add(CLASS_ROVER);
 }
 
+function printRoversMessage (message, error = true) {
+    let console =  document.querySelector('#console');
+    console.value = '';
+    console.style.color = error === true ? 'red' : 'green';
+    console.value = message;
+}
 
 export default {
-    getMarsGround,
-    getStartPosition,
+    getMarsGround: generateMarsGround,
+    getStartPosition: getRoverStartPosition,
     getObstacles,
     sendCommand,
     getRandomRowPosition,
     getRandomColPosition,
     isValidCommand,
     cleanCommand,
-    getElon
+    getElon: getElonPosition
 }
